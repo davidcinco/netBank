@@ -42,7 +42,7 @@
             signInButton.BackColor = Color.DodgerBlue;
             signInButton.FlatAppearance.BorderSize = 0;
             signInButton.FlatStyle = FlatStyle.Flat;
-            signInButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            signInButton.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             signInButton.ForeColor = Color.White;
             signInButton.Location = new Point(94, 287);
             signInButton.Name = "signInButton";
@@ -55,22 +55,22 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            emailLabel.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             emailLabel.ForeColor = Color.White;
-            emailLabel.Location = new Point(94, 106);
+            emailLabel.Location = new Point(94, 97);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new Size(48, 21);
+            emailLabel.Size = new Size(63, 30);
             emailLabel.TabIndex = 1;
             emailLabel.Text = "Email";
             // 
             // passwordLabel
             // 
             passwordLabel.AutoSize = true;
-            passwordLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            passwordLabel.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             passwordLabel.ForeColor = Color.White;
-            passwordLabel.Location = new Point(94, 192);
+            passwordLabel.Location = new Point(94, 183);
             passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new Size(76, 21);
+            passwordLabel.Size = new Size(99, 30);
             passwordLabel.TabIndex = 2;
             passwordLabel.Text = "Password";
             // 
@@ -95,7 +95,7 @@
             registerButton.BackColor = Color.FromArgb(128, 128, 255);
             registerButton.FlatAppearance.BorderSize = 0;
             registerButton.FlatStyle = FlatStyle.Flat;
-            registerButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            registerButton.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             registerButton.ForeColor = Color.White;
             registerButton.Location = new Point(194, 287);
             registerButton.Name = "registerButton";

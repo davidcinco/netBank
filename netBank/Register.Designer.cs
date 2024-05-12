@@ -38,6 +38,7 @@
             passwordTextBox = new TextBox();
             registerButton = new Button();
             ReturnButton = new Button();
+            registrationTitleLabel = new Label();
             SuspendLayout();
             // 
             // firstNameLabel
@@ -146,12 +147,24 @@
             ReturnButton.UseVisualStyleBackColor = false;
             ReturnButton.Click += ReturnButton_Click;
             // 
+            // registrationTitleLabel
+            // 
+            registrationTitleLabel.AutoSize = true;
+            registrationTitleLabel.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            registrationTitleLabel.ForeColor = Color.White;
+            registrationTitleLabel.Location = new Point(12, 9);
+            registrationTitleLabel.Name = "registrationTitleLabel";
+            registrationTitleLabel.Size = new Size(159, 37);
+            registrationTitleLabel.TabIndex = 10;
+            registrationTitleLabel.Text = "Registration";
+            // 
             // Register
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
             ClientSize = new Size(800, 450);
+            Controls.Add(registrationTitleLabel);
             Controls.Add(ReturnButton);
             Controls.Add(registerButton);
             Controls.Add(passwordTextBox);
@@ -180,5 +193,6 @@
         private TextBox passwordTextBox;
         private Button registerButton;
         private Button ReturnButton;
+        private Label registrationTitleLabel;
     }
 }

@@ -39,7 +39,7 @@ namespace netBank
             userData.Add("email", email);
             userData.Add("password", password);
 
-            foreach(KeyValuePair<string, string> pair in userData)
+            foreach (KeyValuePair<string, string> pair in userData)
             {
                 string value = pair.Value;
                 if (value == "")
@@ -50,7 +50,8 @@ namespace netBank
                 }
             }
 
-            if (filledup) {
+            if (filledup)
+            {
                 Console.WriteLine($"First Name: {firstName}\nLast Name: {lastName}\nEmail: {email}\nPassword: {password}");
             }
 
