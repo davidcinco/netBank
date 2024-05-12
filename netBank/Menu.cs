@@ -23,5 +23,26 @@ namespace netBank
             SignIn signIn = new SignIn();
             signIn.Show();
         }
+
+        private void depositButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Deposit deposit = new Deposit();
+            deposit.Show();
+        }
+
+        private void transferButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Transfer transfer = new Transfer();
+            transfer.Show();
+        }
+
+        private void withdrawButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Withdraw withdraw = new Withdraw();
+            withdraw.Show();
+        }
     }
 }

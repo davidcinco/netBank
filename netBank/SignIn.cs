@@ -12,7 +12,14 @@ namespace netBank
             this.Hide();
             Menu menu = new Menu();
             menu.Show();
-            
+
+        }
+
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Register register = new Register();
+            register.Show();
         }
     }
 }

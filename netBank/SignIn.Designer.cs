@@ -39,19 +39,24 @@
             // 
             // signInButton
             // 
+            signInButton.BackColor = Color.DodgerBlue;
+            signInButton.FlatAppearance.BorderSize = 0;
+            signInButton.FlatStyle = FlatStyle.Flat;
             signInButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            signInButton.ForeColor = Color.White;
             signInButton.Location = new Point(94, 287);
             signInButton.Name = "signInButton";
             signInButton.Size = new Size(89, 34);
             signInButton.TabIndex = 0;
             signInButton.Text = "Sign In";
-            signInButton.UseVisualStyleBackColor = true;
+            signInButton.UseVisualStyleBackColor = false;
             signInButton.Click += button1_Click;
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
             emailLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            emailLabel.ForeColor = Color.White;
             emailLabel.Location = new Point(94, 106);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new Size(48, 21);
@@ -62,6 +67,7 @@
             // 
             passwordLabel.AutoSize = true;
             passwordLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            passwordLabel.ForeColor = Color.White;
             passwordLabel.Location = new Point(94, 192);
             passwordLabel.Name = "passwordLabel";
             passwordLabel.Size = new Size(76, 21);
@@ -86,18 +92,24 @@
             // 
             // registerButton
             // 
+            registerButton.BackColor = Color.FromArgb(128, 128, 255);
+            registerButton.FlatAppearance.BorderSize = 0;
+            registerButton.FlatStyle = FlatStyle.Flat;
             registerButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            registerButton.ForeColor = Color.White;
             registerButton.Location = new Point(194, 287);
             registerButton.Name = "registerButton";
             registerButton.Size = new Size(89, 34);
             registerButton.TabIndex = 5;
             registerButton.Text = "Register";
-            registerButton.UseVisualStyleBackColor = true;
+            registerButton.UseVisualStyleBackColor = false;
+            registerButton.Click += registerButton_Click;
             // 
             // title
             // 
             title.AutoSize = true;
             title.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            title.ForeColor = Color.White;
             title.Location = new Point(134, 31);
             title.Name = "title";
             title.Size = new Size(105, 32);
@@ -108,6 +120,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.HotTrack;
             ClientSize = new Size(386, 408);
             Controls.Add(title);
             Controls.Add(registerButton);
