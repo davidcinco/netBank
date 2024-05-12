@@ -132,7 +132,7 @@
             Controls.Add(transferButton);
             Controls.Add(depositButton);
             Name = "Menu";
-            Text = "Menu";
+            Text = "NetBank - Menu";
             ResumeLayout(false);
             PerformLayout();
         }

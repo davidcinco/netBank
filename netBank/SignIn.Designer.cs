@@ -130,7 +130,7 @@
             Controls.Add(emailLabel);
             Controls.Add(signInButton);
             Name = "SignIn";
-            Text = "Form1";
+            Text = "NetBank - Sign In";
             ResumeLayout(false);
             PerformLayout();
         }
