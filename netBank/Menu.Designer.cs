@@ -38,7 +38,7 @@
             // depositButton
             // 
             depositButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            depositButton.Location = new Point(56, 174);
+            depositButton.Location = new Point(43, 174);
             depositButton.Name = "depositButton";
             depositButton.Size = new Size(123, 32);
             depositButton.TabIndex = 0;
@@ -58,7 +58,7 @@
             // withdrawButton
             // 
             withdrawButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            withdrawButton.Location = new Point(448, 174);
+            withdrawButton.Location = new Point(454, 174);
             withdrawButton.Name = "withdrawButton";
             withdrawButton.Size = new Size(123, 32);
             withdrawButton.TabIndex = 2;
@@ -67,20 +67,24 @@
             // 
             // logOutButton
             // 
+            logOutButton.BackColor = Color.FromArgb(255, 128, 128);
+            logOutButton.FlatAppearance.BorderColor = Color.White;
+            logOutButton.FlatAppearance.BorderSize = 0;
+            logOutButton.FlatStyle = FlatStyle.Flat;
             logOutButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            logOutButton.Location = new Point(251, 282);
+            logOutButton.Location = new Point(454, 376);
             logOutButton.Name = "logOutButton";
             logOutButton.Size = new Size(123, 32);
             logOutButton.TabIndex = 3;
             logOutButton.Text = "Log Out";
-            logOutButton.UseVisualStyleBackColor = true;
+            logOutButton.UseVisualStyleBackColor = false;
             logOutButton.Click += logOutButton_Click;
             // 
             // menuLabel
             // 
             menuLabel.AutoSize = true;
             menuLabel.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            menuLabel.Location = new Point(264, 50);
+            menuLabel.Location = new Point(267, 22);
             menuLabel.Name = "menuLabel";
             menuLabel.Size = new Size(82, 32);
             menuLabel.TabIndex = 4;
