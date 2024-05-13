@@ -16,5 +16,17 @@ namespace netBank
         {
             InitializeComponent();
         }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
+        }
+
+        private void withdrawBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

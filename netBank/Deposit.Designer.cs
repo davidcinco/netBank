@@ -33,8 +33,8 @@
             amountTextBox = new TextBox();
             balanceLabel = new Label();
             totalLabel = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            currenttextBox = new TextBox();
+            totaltextBox = new TextBox();
             depositButton = new Button();
             cancelButton = new Button();
             SuspendLayout();
@@ -55,7 +55,7 @@
             depositAmountLabel.AutoSize = true;
             depositAmountLabel.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             depositAmountLabel.ForeColor = Color.White;
-            depositAmountLabel.Location = new Point(183, 73);
+            depositAmountLabel.Location = new Point(161, 74);
             depositAmountLabel.Name = "depositAmountLabel";
             depositAmountLabel.Size = new Size(450, 32);
             depositAmountLabel.TabIndex = 1;
@@ -64,7 +64,7 @@
             // amountTextBox
             // 
             amountTextBox.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            amountTextBox.Location = new Point(267, 124);
+            amountTextBox.Location = new Point(250, 124);
             amountTextBox.Name = "amountTextBox";
             amountTextBox.Size = new Size(301, 50);
             amountTextBox.TabIndex = 2;
@@ -92,25 +92,25 @@
             totalLabel.TabIndex = 4;
             totalLabel.Text = "Total:";
             // 
-            // textBox1
+            // currenttextBox
             // 
-            textBox1.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(612, 213);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(157, 43);
-            textBox1.TabIndex = 5;
-            textBox1.Text = "8000.38";
-            textBox1.TextAlign = HorizontalAlignment.Right;
+            currenttextBox.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            currenttextBox.Location = new Point(612, 213);
+            currenttextBox.Name = "currenttextBox";
+            currenttextBox.ReadOnly = true;
+            currenttextBox.Size = new Size(157, 43);
+            currenttextBox.TabIndex = 5;
+            currenttextBox.TextAlign = HorizontalAlignment.Right;
             // 
-            // textBox2
+            // totaltextBox
             // 
-            textBox2.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(612, 277);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(157, 43);
-            textBox2.TabIndex = 6;
-            textBox2.Text = "8000.38";
-            textBox2.TextAlign = HorizontalAlignment.Right;
+            totaltextBox.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            totaltextBox.Location = new Point(612, 277);
+            totaltextBox.Name = "totaltextBox";
+            totaltextBox.ReadOnly = true;
+            totaltextBox.Size = new Size(157, 43);
+            totaltextBox.TabIndex = 6;
+            totaltextBox.TextAlign = HorizontalAlignment.Right;
             // 
             // depositButton
             // 
@@ -119,12 +119,13 @@
             depositButton.FlatStyle = FlatStyle.Flat;
             depositButton.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             depositButton.ForeColor = Color.White;
-            depositButton.Location = new Point(411, 371);
+            depositButton.Location = new Point(326, 352);
             depositButton.Name = "depositButton";
-            depositButton.Size = new Size(157, 58);
+            depositButton.Size = new Size(185, 80);
             depositButton.TabIndex = 7;
             depositButton.Text = "Deposit";
             depositButton.UseVisualStyleBackColor = false;
+            depositButton.Click += depositButton_Click;
             // 
             // cancelButton
             // 
@@ -133,12 +134,13 @@
             cancelButton.FlatStyle = FlatStyle.Flat;
             cancelButton.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             cancelButton.ForeColor = Color.White;
-            cancelButton.Location = new Point(612, 371);
+            cancelButton.Location = new Point(584, 352);
             cancelButton.Name = "cancelButton";
-            cancelButton.Size = new Size(157, 58);
+            cancelButton.Size = new Size(185, 80);
             cancelButton.TabIndex = 8;
             cancelButton.Text = "Cancel";
             cancelButton.UseVisualStyleBackColor = false;
+            cancelButton.Click += cancelButton_Click;
             // 
             // Deposit
             // 
@@ -148,8 +150,8 @@
             ClientSize = new Size(800, 450);
             Controls.Add(cancelButton);
             Controls.Add(depositButton);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(totaltextBox);
+            Controls.Add(currenttextBox);
             Controls.Add(totalLabel);
             Controls.Add(balanceLabel);
             Controls.Add(amountTextBox);
@@ -168,8 +170,8 @@
         private TextBox amountTextBox;
         private Label balanceLabel;
         private Label totalLabel;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox currenttextBox;
+        private TextBox totaltextBox;
         private Button depositButton;
         private Button cancelButton;
     }
