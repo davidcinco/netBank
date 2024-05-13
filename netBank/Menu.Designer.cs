@@ -43,9 +43,9 @@
             depositButton.FlatStyle = FlatStyle.Flat;
             depositButton.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point);
             depositButton.ForeColor = Color.White;
-            depositButton.Location = new Point(54, 174);
+            depositButton.Location = new Point(26, 145);
             depositButton.Name = "depositButton";
-            depositButton.Size = new Size(139, 79);
+            depositButton.Size = new Size(272, 137);
             depositButton.TabIndex = 0;
             depositButton.Text = "Deposit";
             depositButton.UseVisualStyleBackColor = false;
@@ -58,12 +58,13 @@
             transferButton.FlatStyle = FlatStyle.Flat;
             transferButton.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point);
             transferButton.ForeColor = Color.White;
-            transferButton.Location = new Point(258, 174);
+            transferButton.Location = new Point(26, 351);
             transferButton.Name = "transferButton";
             transferButton.Size = new Size(139, 79);
             transferButton.TabIndex = 1;
             transferButton.Text = "Transfer";
             transferButton.UseVisualStyleBackColor = false;
+            transferButton.Visible = false;
             transferButton.Click += transferButton_Click;
             // 
             // withdrawButton
@@ -73,9 +74,9 @@
             withdrawButton.FlatStyle = FlatStyle.Flat;
             withdrawButton.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point);
             withdrawButton.ForeColor = Color.White;
-            withdrawButton.Location = new Point(454, 174);
+            withdrawButton.Location = new Point(323, 145);
             withdrawButton.Name = "withdrawButton";
-            withdrawButton.Size = new Size(139, 79);
+            withdrawButton.Size = new Size(272, 137);
             withdrawButton.TabIndex = 2;
             withdrawButton.Text = "Withdraw";
             withdrawButton.UseVisualStyleBackColor = false;
@@ -89,9 +90,9 @@
             logOutButton.FlatStyle = FlatStyle.Flat;
             logOutButton.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             logOutButton.ForeColor = Color.White;
-            logOutButton.Location = new Point(454, 376);
+            logOutButton.Location = new Point(472, 386);
             logOutButton.Name = "logOutButton";
-            logOutButton.Size = new Size(123, 32);
+            logOutButton.Size = new Size(123, 44);
             logOutButton.TabIndex = 3;
             logOutButton.Text = "Log Out";
             logOutButton.UseVisualStyleBackColor = false;
