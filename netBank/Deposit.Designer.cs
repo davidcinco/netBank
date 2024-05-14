@@ -69,6 +69,7 @@
             amountTextBox.Size = new Size(301, 50);
             amountTextBox.TabIndex = 2;
             amountTextBox.TextAlign = HorizontalAlignment.Center;
+            amountTextBox.TextChanged += amountTextBox_TextChanged;
             // 
             // balanceLabel
             // 

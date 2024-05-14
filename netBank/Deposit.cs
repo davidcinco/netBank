@@ -17,6 +17,11 @@ namespace netBank
             InitializeComponent();
         }
 
+        private void amountTextBox_TextChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine($"Se cambio {amountTextBox.Text}");
+        }
+
         private void cancelButton_Click(object sender, EventArgs e)
         {
             this.Hide();
