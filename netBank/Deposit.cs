@@ -29,7 +29,6 @@ namespace netBank
 
         private void amountTextBox_TextChanged(object sender, EventArgs e)
         {
-            Console.WriteLine($"Se cambio {amountTextBox.Text}");
             float total = (Balance + float.Parse(amountTextBox.Text));
             totaltextBox.Text = total.ToString();
         }

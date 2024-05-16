@@ -44,7 +44,6 @@ namespace netBank
 
         private void withdrawtextBox_TextChanged(object sender, EventArgs e)
         {
-            Console.WriteLine($"Se cambio {withdrawtextBox.Text}");
             float total = (Balance - float.Parse(withdrawtextBox.Text));
             lefttextBox.Text = total.ToString();
             
