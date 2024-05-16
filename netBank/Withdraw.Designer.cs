@@ -71,6 +71,7 @@
             withdrawtextBox.Size = new Size(303, 50);
             withdrawtextBox.TabIndex = 2;
             withdrawtextBox.TextAlign = HorizontalAlignment.Center;
+            withdrawtextBox.TextChanged += withdrawtextBox_TextChanged;
             // 
             // currentBalanceLabel
             // 
